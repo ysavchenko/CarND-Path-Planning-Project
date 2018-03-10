@@ -402,7 +402,7 @@ int main() {
             }
 
             // Add our target points
-            for (int future_step = 1; future_step <= 2; i++) {
+            for (int future_step = 1; future_step <= 2; future_step++) {
               vector<double> next_point = getXY(car_s + future_step * FUTURE_DISTANCE, lanes[lane].getCenter(), map_waypoints_s, map_waypoints_x, map_waypoints_y);
               ptsx.push_back(next_point[0]);
               ptsy.push_back(next_point[1]);	
